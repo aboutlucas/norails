@@ -12,6 +12,12 @@
 	padding: 0 2.5%;
 }
 
+@media(max-width:720px){
+  .col-1, .col-2, .col-3{
+    width:100%;
+  }
+}
+
 .homepage_content {
 	h2{
 		font-size: 1.1rem;
