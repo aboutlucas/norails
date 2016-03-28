@@ -5,7 +5,7 @@
 			<hr/>
 		</header>
 		<section class="content">
-			<%= simple_format @post.content %>
+			<%= markdown @post.content %>
 		</section>
 		
 		<hr />	
@@ -22,6 +22,7 @@
 
 		<hr />
 		
+		<%= render 'disquis' %>
 	</article>
 
 	<%= link_to "Edit", edit_post_path(@post) %>
