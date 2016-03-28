@@ -1,1 +1,21 @@
-<h1>Ola Mundo</h1>
+<h1 id="page_title" class="page_title">Coisas Legais</h1>
+	
+	<article id="post_wrapper" class="skinny_wrapper">
+		<% @posts.each do |post| %>
+		
+			<section class="post">
+				<p class="data"><%= post.created_at.strftime('%A, %b %d') %></p>
+				<h2><a href="#"><%= link_to post.title, post %></a></h2>
+				<hr/>
+			</section>
+
+		<% end %>
+
+	</article>
+	
+	<div class="pagination">
+		<span class="previous_page disabled">Previous</span>	
+		<em class="current">1</em>
+		<a rel="next" href="#">2</a>
+		<a class="next_page" href="#">Next</a>
+	</div>
