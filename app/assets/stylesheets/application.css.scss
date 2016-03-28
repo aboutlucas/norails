@@ -1,3 +1,5 @@
+@import 'normalize';
+
 $dark: #424652;
 $white: #ffffff;
 $light: #9a9da4;
@@ -160,3 +162,6 @@ input[type="submit"] {
 		color: $highlight;
 	}
 }
+
+@import 'home';
+@import '_post_project';
