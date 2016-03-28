@@ -1,0 +1,14 @@
+<h1 id="page_title" class="page_title">Projects</h1>
+	
+	<article id="post_wrapper" class="skinny_wrapper">
+		<% @projects.each do |project| %>
+		
+			<section class="post">
+				<p class="data"><%= project.created_at.strftime('%A, %b %d') %></p>
+				<h2><a href="#"><%= link_to project.title, project %></a></h2>
+				<hr/>
+			</section>
+
+		<% end %>
+
+	</article>
