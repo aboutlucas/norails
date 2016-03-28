@@ -177,3 +177,9 @@ input[type="submit"], .button {
 @import 'home';
 @import '_post_project';
 @import 'pygments';
+
+@media(max-width:720px){
+  .col-1, .col-2, .col-3{
+    width:100%;
+  }
+}
