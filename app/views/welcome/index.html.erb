@@ -19,9 +19,11 @@
 		<section class="col-3 homepage_content">
 			<h2>Sobre a Páscoa</h2>
 			<hr/>
+
 			<% @projects.each do |project| %>
 				<h3><a href="#"><%= link_to project.title, project %></a></h3>		
 				<p class="data"><%= project.created_at.strftime("%A, %b %d") %></p>
 			<% end %>
+			
 		</section>
 </main>
